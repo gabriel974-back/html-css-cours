@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Tête de la page HTML -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0" />
+    <!-- Titre de la page HTML -->
+    <title>Cours HTML</title>
+    <!-- Îcone de l'onglet -->
+    <link rel="shortcut icon" href="logo-html.png" />
+  </head>
+  <!-- Corps de la page HTML -->
+  <body>
+    <header>
+      <!-- Partie texte  -->
+      <h1>Texte - Titre H1</h1>
+      <p>
+        Voici un texte basique, <em>un texte en italique</em>
+        <strong>et un texte en GRAS.</strong>
+        <span>L'Élément span ne revient pas à la ligne.</span>
+      </p>
+      <!-- lorem ipsum pour simuler du texte. -->
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, sint
+        eaque, et doloribus asperiores consectetur vel voluptate hic totam
+        tempora facere animi dolores, officiis quod reprehenderit consequuntur
+        id aliquid. Voluptatibus!
+      </p>
+    </header>
+    <section>
+      <!-- Partie photos -->
+      <div>
+        <h2>Photo - Titre H2</h2>
+        <img src="paysage.jpg" height="250" alt="image-paysage" />
+      </div>
+      <!-- Partie listes -->
+      <div>
+        <h3>Liste - Titre H3</h3>
+        <ul>
+          <li>UL = Unordered List</li>
+          <li>UL = Unordered List</li>
+          <li>UL = Unordered List</li>
+        </ul>
+        <ol>
+          <li>OL = Ordered List</li>
+          <li>OL = Ordered List</li>
+          <li>OL = Ordered List</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux - Titre H4</h4>
+        <table border="1" widht="50%">
+          <!-- Légende -->
+          <caption>
+            Populations d'europe
+          </caption>
+          <!-- Tête du tableau  -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Populations</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau -->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>47M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5><span>&#64;</span> Liens - Titre H5</h5>
+        <a href="https://htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat Sheet</a
+        >
+        <br /><br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >HTML Îcone</a
+        >
+      </div>
+      <div>
+        <h6>Vidéo - Titre H6</h6>
+        <video src="Pancakes.mp4" height="150" autoplay loop muted></video>
+      </div>
+    </section>
+    <br />
+    <!-- Création d'un formulaire. -->
+    <section>
+      <h2>Formulaire</h2>
+      <form action="action.php" method="post">
+        <label for="name">Nom</label>
+        <input id="name" type="text" placeholder="Entrez votre nom" />
+        <br />
+        <label for="age">Age</label>
+        <input id="age" type="number" min="0" max="99" step="1" value="18" />
+        <br />
+        <!-- Type d'input existants -->
+        <!-- Input de type select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="man">Homme</option>
+          <option selected value="woman">Femme</option>
+        </select>
+        <br />
+        <!-- Input de type radio -->
+        <div>
+          <input type="radio" name="type" id="human" checked />
+          <label for="human">Humain</label>
+
+          <input type="radio" name="type" id="dog" />
+          <label for="dog">Chien</label>
+
+          <input type="radio" name="type" id="cat" />
+          <label for="cat">Chat</label>
+        </div>
+        <!-- Créer une zone de texte -->
+
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="Saisissez votre demande"
+        ></textarea>
+        <br />
+
+        <!-- Input Checkbox -->
+        <label><input type="checkbox" /> Accepter les CGV</label>
+        <input type="submit" value="Valider" />
+      </form>
+    </section>
+    <!-- Mails & envoi de fichier -->
+    <footer>
+      <a href="mailto:gtecher57@gmail.com"> <i>&#64;</i>Contacte</a>
+      <br />
+      <br />
+      <a href="recette-cuisine.txt" download="nom-du-fichier"
+        >Télécharger votre recette de cuisine</a
+      >
+    </footer>
+  </body>
+</html>
